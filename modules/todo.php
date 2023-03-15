@@ -24,9 +24,19 @@ switch($vars['action']){
         exit;
     }break;
     
-    case "do_edit":{
-        //some code here to edit and save...
+    case "edit":{
+        include("view/header.php");
+        include("view/edit.php");
+        include("view/footer.php");
         exit;
+
+    }break;
+
+    case "do_edit":{
+        $db->query("UPDATE `items` SET `title` = '".$vars['title']."' WHERE `items`.`item_id` = ".$vars['item_id'].";");
+        header("location: index.php");
+        exit;  
+
     }break;
     
     case "help":{

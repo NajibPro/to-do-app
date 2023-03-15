@@ -25,6 +25,8 @@
           <input type="text" readonly class="form-control " aria-label="Text input with checkbox"
             value="<?php echo htmlspecialchars($items[$i]['title']); ?>">
           <div class="input-group-append">
+          <button class="btn btn-success text-white mx-2" type="button" id="button-addon2"
+              onclick="location='index.php?action=edit&item_id=<?php echo $items[$i]['item_id']; ?>'">Edit</button>
             <button class="btn btn-outline-secondary bg-danger text-white" type="button" id="button-addon2"
               onclick="location='index.php?action=delete&item_id=<?php echo $items[$i]['item_id']; ?>'">X</button>
           </div>
