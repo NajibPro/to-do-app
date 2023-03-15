@@ -19,7 +19,9 @@ switch($vars['action']){
     
     case "delete":{
         //Some code here to delete ....
-        exit;        
+        $db->query("DELETE FROM items WHERE item_id = ?", $vars['item_id']);
+        header("location: index.php");
+        exit;
     }break;
     
     case "do_edit":{
