@@ -6,19 +6,36 @@ include("init.php");
 if (isset($_GET['payload'])){
     $vars['action']='do_edit';
     $vars['item_id']=$_GET['payload'];
+    $vars['user_id']=$_GET['user_id'];
+
 }
 
-if ( isset($_GET['ask_login'])){
+if ( $vars['action']=='ask_login'){
     $vars['action']='ask_login';
+    
+    include("modules/todo.php");
+    exit;
 }
 
-
-if( !isset($_GET['user_id'])){
-    $vars['action'] = 'login';
+if ( $vars['action']=='ask_register'){
+    $vars['action']='ask_register';
+    
+    include("modules/todo.php");
+    exit;
 }
+
+if (isset($_GET['add_item'])){
+    $vars['action']='do_add';
+    
+    $vars['user_id']=$_GET['add_item'];
+
+    include("modules/todo.php");
+    exit;
+}
+
 
 if (!isset($vars['action'])){
-    $vars['action']='list';
+    $vars['action']='login';
 }
 
 include("modules/todo.php");

@@ -46,22 +46,24 @@ $vars=get_input_vars();
         <div class="row justify-content-center align-items-center main-row">
             <div class="col shadow main-col bg-white">
                 <div class="row bg-primary text-white">
-                    <div class="col  p-2">
+                    <div class="col p-2">
                         <h4>
                             <?php echo LANG_APP_NAME; ?>
                         </h4>
                     </div>
                 </div>
 
-                <form action="index.php" method="get">
+                <form action="../index.php" method="get">
                     <input type="hidden" name="action" value="ask_register" />
                     <div class="col justify-content-between text-white p-2">
 
                         <div class="form-group flex-fill mb-2">
+                            <label for='todo-email' class='text-primary'>Email</label>
                             <input id="todo-mail" name="email" type="email" class="form-control">
                         </div>
 
                         <div class="form-group flex-fill mb-2">
+                            <label for='todo-password' class='text-primary'>Password</label>
                             <input id="todo-password" name="password" type="password" class="form-control">
                         </div>
 

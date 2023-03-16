@@ -1,5 +1,6 @@
 <form action="index.php" method="get">
     <input type="hidden" name="action" value="do_edit" />
+    <input type="hidden" name="user_id" value="<?php echo $vars['user_id']; ?>" />
     <div class="row justify-content-between text-white p-2">
 
         <div class="form-group flex-fill mb-2">

@@ -29,7 +29,7 @@
                     </div>
                 </div>
 
-                <form action="index.php" method="get">
+                <form action="index.php" method="post">
                     <input type="hidden" name="action" value="ask_login" />
                     <div class="column justify-content-between text-white p-2">
 

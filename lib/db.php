@@ -19,6 +19,7 @@ class db {
         if (!$this->query_closed) {
             $this->query->close();
         }
+
 		if ($this->query = $this->connection->prepare($query)) {
             if (func_num_args() > 1) {
                 $x = func_get_args();
