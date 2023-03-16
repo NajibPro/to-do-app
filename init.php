@@ -4,7 +4,7 @@ error_reporting(E_ERROR | E_PARSE);
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 
-define('APP_LANG', 'fr');
+define('APP_LANG', 'en');
 
 include("lib/db.php");
 include("lib/utils.php");

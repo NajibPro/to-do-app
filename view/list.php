@@ -13,6 +13,9 @@
 </form>
 <div class="row" id="todo-container">
   <?php
+  echo $vars['username']; 
+
+  echo $vars['password'];
     for ($i = 0; $i < count($items); $i++) {
       ?>
       <div class="col col-12 p-2 todo-item" todo-id="${todo.id}">

@@ -1,6 +1,26 @@
 <?php
 
 switch($vars['action']){
+
+    case "login":{
+        $items = $db->query('SELECT * FROM items')->fetchAll();
+        
+        include("view/login.php");
+        exit;
+    }break;
+
+    case "ask_login":{
+
+        include("view/header.php");
+        include("view/list.php");
+        include("view/footer.php");
+        
+        // $items = $db->query('SELECT * FROM items')->fetchAll();
+        
+        exit;
+    }break;
+
+
     case "list":{
         $items = $db->query('SELECT * FROM items')->fetchAll();
         
