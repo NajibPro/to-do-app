@@ -31,7 +31,7 @@ switch($vars['action']){
     }break;
 
     case "do_add":{
-        $db->query("INSERT INTO items (title) VALUES (?)",$vars['title']);
+        $db->query("INSERT INTO items (title) VALUES (?)", $vars['title']);
         header("location: index.php");
         exit;        
         
@@ -61,6 +61,11 @@ switch($vars['action']){
     
     case "help":{
         //some code here to show help 
+        exit;
+    }break;
+
+    case "login":{
+        
         exit;
     }break;
     
