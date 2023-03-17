@@ -1,2 +1,2 @@
 The app can be visited at :
-www.startsoftware.dev/todo
+http://to-do-application.rf.gd
