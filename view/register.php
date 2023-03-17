@@ -11,10 +11,10 @@ include("../lib/utils.php");
 include("../lang/".APP_LANG.".php");
 
 //It is very stupid to share passwords within GIT, but for demostration, we will close our eyes on this principle.
-$dbhost = 'localhost';
-$dbuser = 'g1.1';
-$dbpass = 'g1.1g1.1';
-$dbname = 'todo_g1.1';
+$dbhost = 'sql300.epizy.com';
+$dbuser = 'epiz_33814210';
+$dbpass = 'Lyt1H8R57NU8egA';
+$dbname = 'epiz_33814210_todo';
 
 $db = new db($dbhost, $dbuser, $dbpass, $dbname);
 
